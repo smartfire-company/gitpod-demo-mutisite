@@ -1,0 +1,11 @@
+tasks:
+  - name: Web
+    init: npm install
+    command: npm run start
+
+ports:
+  - name: Frontend
+    description: Port 3000 for the frontend
+    port: 3000
+    onOpen: open-preview
+
